@@ -1,0 +1,26 @@
+.profile-avatar-container {
+  position: relative;
+}
+
+.profile-avatar-button {
+  background-color: var(--primary-main, #1976d2);
+  color: white;
+}
+
+.profile-avatar-button:hover {
+  background-color: var(--primary-dark, #115293);
+}
+
+.profile-avatar {
+  font-size: calc(var(--avatar-size, 40px) / 2);
+}
+
+.profile-avatar-teacher {
+  background-color: #1976d2;
+  color: white;
+}
+
+.profile-avatar-student {
+  background-color: #f44336;
+  color: white;
+}

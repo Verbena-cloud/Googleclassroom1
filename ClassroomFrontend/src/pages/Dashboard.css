@@ -1,0 +1,78 @@
+/* Animation for dashboard items */
+.dashboard-item {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease-out;
+}
+
+.dashboard-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Drop animation */
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drop-animation {
+  animation: dropIn 0.7s ease-out forwards;
+}
+
+/* Staggered animation for multiple items */
+.dashboard-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.dashboard-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dashboard-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.dashboard-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.dashboard-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.dashboard-item:nth-child(n+6) {
+  animation-delay: 0.6s;
+}
+
+/* Announcement animation */
+.announcement-slide {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  max-width: 400px;
+  animation: dropIn 0.7s ease-out forwards;
+}
+
+/* Card hover effect */
+.dashboard-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
