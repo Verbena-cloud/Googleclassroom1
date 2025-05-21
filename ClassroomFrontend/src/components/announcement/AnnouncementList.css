@@ -1,0 +1,33 @@
+.announcements-list {
+  padding: 20px 0;
+}
+
+.announcement-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: #5f6368;
+  font-size: 16px;
+}
+
+.announcement-error {
+  background-color: #fdeded;
+  color: #5f2120;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #d93025;
+}
+
+.no-announcements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  color: #5f6368;
+  font-style: italic;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 20px 0;
+}
